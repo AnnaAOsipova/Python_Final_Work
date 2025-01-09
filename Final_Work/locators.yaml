@@ -4,7 +4,6 @@ xpath:
     LOCATOR_ERROR_FIELD: //*[@id="app"]/main/div/div/div[2]/h2
     LOCATOR_HELLO: //*[@id="app"]/main/nav/ul/li[3]/a
     LOCATOR_ABOUT_LINK: //*[@id="app"]/main/nav/ul/li[1]/a
-    #LOCATOR_ABOUT_TITLE: //*[@id="app"]/main/div/div/h1
 
 css:
     LOCATOR_LOGIN_BTN: button
