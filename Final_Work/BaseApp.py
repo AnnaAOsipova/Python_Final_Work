@@ -2,7 +2,6 @@ import yaml
 import logging
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 
 with open("./testdata.yaml") as f:
     testdata = yaml.safe_load(f)
