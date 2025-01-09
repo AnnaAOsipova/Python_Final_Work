@@ -1,4 +1,5 @@
 import pytest
+import requests
 import yaml
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -9,6 +10,7 @@ with open("testdata.yaml") as f:
     data = yaml.safe_load(f)
 
 selected_browser = data.get("browser", "chrome")
+send_email = str(data.get("send_email", "false")).lower() == "true"
 
 @pytest.fixture(scope="session")
 def browser():
@@ -17,4 +19,3 @@ def browser():
     driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
-
