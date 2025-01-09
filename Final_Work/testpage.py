@@ -106,11 +106,11 @@ class OperationsHelper(BasePage):
     def get_error_text(self):
         return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_ERROR_FIELD"], description="error field")
 
-   # def get_user_text(self):
-      #  return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_HELLO"], description="Hello, [username]")
+    def get_user_text(self):
+        return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_HELLO"], description="Hello, [username]")
 
-   # def get_about_text(self):
-     #   return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="About us")
+    def get_about_text(self):
+        return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="About us")
 
     def get_about_value(self):
         return self.get_value_from_field(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="value")
