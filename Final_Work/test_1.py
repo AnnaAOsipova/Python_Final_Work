@@ -1,15 +1,9 @@
-import requests
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-
-import BaseApp
 
 from testpage import OperationsHelper
 import logging
 import yaml, time
-from selenium.webdriver.support import expected_conditions as EC
 
-with open("testdata.yaml", encoding='utf-8') as f:
+with open('testdata.yaml', encoding='utf-8') as f:
    data = yaml.safe_load(f)
 
 name = data["username"]
